@@ -1,0 +1,74 @@
+@import url("./animation.css");
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+p{
+    text-align: center;
+}
+.hero{
+    margin: 0 0 50px;
+    background-color: whitesmoke;
+    padding: 20px;
+    min-height: 600px;
+    background-image: url(images/Reef.png);
+    background-size: cover;
+    background-position: top right;
+}
+
+.img{
+    display: block;
+    margin:0 auto 20px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    animation-name:spin;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+.hero:hover h1{
+    background-color: white;
+}
+.eco-friendly{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+}
+
+.eco-friendly img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: rotate(45deg)
+}
+.left{
+    animation: rotateLeft 6s linear infinite;
+}
+
+.right{
+    animation: rotateRight 6s linear infinite;
+}
+
+@keyframes rotateLeft {
+from {
+transform: rotate(45deg);
+}
+to {
+transform: rotate(405deg);
+}
+}
+
+@keyframes rotateRight {
+from {
+transform: rotate(45deg);
+}
+to {
+transform: rotate(-315deg);
+}
+}
+
