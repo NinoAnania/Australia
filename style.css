@@ -48,6 +48,10 @@ p{
    aspect-ratio: 1/1;
    animation-name: spin;
    animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-delay: 0s;
+   animation-direction: normal;
 }
 .left{
 animation-name:spin-left;
@@ -57,4 +61,11 @@ animation-name:spin-left;
    animation-name:spin-right;
 }
 
-
+@keyframes spin{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
