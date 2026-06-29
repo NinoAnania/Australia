@@ -40,35 +40,21 @@ p{
 }
 
 .eco-friendly img{
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 50%;
-    transform: rotate(45deg)
+   display: block;
+   margin:0 auto 20px;
+   width: 200px;
+   object-fit: cover;
+   border-radius: 50%;
+   aspect-ratio: 1/1;
+   animation-name: spin;
+   animation-duration: 2s;
 }
 .left{
-    animation: rotateLeft 6s linear infinite;
+animation-name:spin-left;
 }
 
 .right{
-    animation: rotateRight 6s linear infinite;
+   animation-name:spin-right;
 }
 
-@keyframes rotateLeft {
-from {
-transform: rotate(45deg);
-}
-to {
-transform: rotate(405deg);
-}
-}
-
-@keyframes rotateRight {
-from {
-transform: rotate(45deg);
-}
-to {
-transform: rotate(-315deg);
-}
-}
 
